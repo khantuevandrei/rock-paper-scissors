@@ -31,7 +31,6 @@ function getComputerChoice() {
             choice = 'scissors';
             break;
     }
-    console.log(`Computer chooses ${choice}`)
     return choice;
 }
 
@@ -47,25 +46,17 @@ let userWins = 0;
 // Create a function to calculate the result of the round & update the score
 function calculateResult(choice1, choice2) {
     if (choice1 === 'rock' && choice2 === 'paper') {
-        console.log('You lose round');
         computerWins++;
     } else if (choice1 === 'rock' && choice2 === 'scissors') {
-        console.log('You win round');
         userWins++;
     } else if (choice1 === 'paper' && choice2 === 'rock') {
-        console.log('You win round');
         userWins++;
     } else if (choice1 === 'paper' && choice2 === 'scissors') {
-        console.log('You lose round');
         computerWins++;
     } else if (choice1 === 'scissors' && choice2 === 'rock') {
-        console.log('You lose round');
         computerWins++;
     } else if (choice1 === 'scissors' && choice2 === 'paper') {
-        console.log('You win round');
         userWins++;
-    } else {
-        console.log('Draw');
     }
     
 }
