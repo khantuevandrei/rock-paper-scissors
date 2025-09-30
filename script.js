@@ -68,7 +68,10 @@ function playRound(userChoice, computerChoice) {
     resultsContainer.textContent = `User ${userWins} - ${computerWins} Computer.`;
     roundsPlayed++;
     if (roundsPlayed === 5) {
-        resultsContainer.textContent += ' Game is over.'
+        resultsContainer.textContent += ' Game is over.';
+        container.removeChild(rockBtn);
+        container.removeChild(paperBtn);
+        container.removeChild(scissorsBtn);
     }
 }
 
