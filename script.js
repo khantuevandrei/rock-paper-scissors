@@ -76,3 +76,16 @@ function playRound(userChoice, computerChoice) {
     // Announce current score
     console.log(`User ${userWins} - ${computerWins} Computer`);
 }
+
+
+
+//DOM manipulations
+
+const rockBtn = document.createElement('button');
+rockBtn.textContent = 'Rock';
+
+const paperBtn = document.createElement('button');
+paperBtn.textContent = 'Paper';
+
+const scissorsBtn = document.createElement('button');
+scissorsBtn.textContent = 'Scissors';
