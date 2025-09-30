@@ -76,15 +76,3 @@ function playRound(userChoice, computerChoice) {
     // Announce current score
     console.log(`User ${userWins} - ${computerWins} Computer`);
 }
-
-
-// Create a function to play a game of 5 rounds & increments the number of rounds after
-// each round
-function playGame() {
-    for (let i = roundsPlayed; i < 5; i++) {
-        console.log(`Round ${roundsPlayed + 1}`);
-        playRound(getUserChoice(), getComputerChoice());
-        roundsPlayed++;
-    }
-    console.log(`Game is over`);
-}
