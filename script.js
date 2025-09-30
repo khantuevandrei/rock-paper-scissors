@@ -74,7 +74,11 @@ function calculateResult(choice1, choice2) {
 function playRound(userChoice, computerChoice) {
     calculateResult(userChoice, computerChoice);
     // Announce current score
-    console.log(`User ${userWins} - ${computerWins} Computer`);
+    resultsContainer.textContent = `User ${userWins} - ${computerWins} Computer.`;
+    roundsPlayed++;
+    if (roundsPlayed === 5) {
+        resultsContainer.textContent += ' Game is over.'
+    }
 }
 
 
